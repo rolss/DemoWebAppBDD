@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 
 
-# ---------------- Funciones ----------------
+# ---------------- Functions ----------------
 def formateo(lista):
     newformat=[]
     for elemento in lista: 
@@ -42,7 +42,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-# ---------------- Run Webpage below ----------------
+# ---------------- Running Web app below ----------------
 rows = run_query("SELECT * from covid2;")
 
 regiones = run_query("SELECT DISTINCT Region from covid2;")
@@ -92,7 +92,7 @@ if filtering != []:
         st.plotly_chart(fig)
     elif chart_type=="Vertical chart 2":
         st.title("Covid Cases")
-        st.bar_chart(chart_data, height=650) #width=200, use_container_width=True
+        st.bar_chart(chart_data, height=650) 
 else:
     st.write("Select some information to be displayed!")
     info=[]
