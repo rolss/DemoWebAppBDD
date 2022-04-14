@@ -94,7 +94,3 @@ if filtering != []:
 else:
     st.write("Select some information to be displayed!")
     info=[]
-
-
-# PUEDO HACER UN SIDEBAR CON FECHAS!!! COMO EL BUNDESLIGA!!!!!!!!!!!W
-# Que otra info se puede hacer display?
